@@ -1,19 +1,23 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Box />
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <!-- <Box /> -->
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Box from 'views/box.vue'
+// import Box from 'views/box.vue'
+import { getDataType } from 'js-utils-gzy'
 export default {
   name: 'App',
   components: {
-    // HelloWorld
-    Box
+    // Box
+  },
+  mounted () {
+    console.log(getDataType(1))
+    console.log(getDataType('1'))
+    console.log(getDataType({a: 1}))
+    console.log(getDataType([1]))
   }
 }
 </script>

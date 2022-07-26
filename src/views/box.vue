@@ -12,7 +12,7 @@
 <script>
 import CountDown from 'components/CountDown.vue'
 export default {
-  name: '',
+  name: 'CountDown',
   components: {
     CountDown
   },
